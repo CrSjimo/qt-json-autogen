@@ -55,7 +55,7 @@
 #    define __qas_attr__(T)
 #    define __qas_exclude__
 #    define __qas_include__
-#    define __qas_constraint__(T)
+#    define __qas_constraint__(...)
 #endif
 
 
