@@ -48,8 +48,8 @@ public:
         TypeNotMatch = 4,
         UnlistedValue = 8,
         ConstraintViolation = 16,  // Value violates constraint rules
-        Success = Ok | KeyNotFound | UnlistedValue,
-        Failed = TypeNotMatch | ConstraintViolation,
+        Success = Ok,
+        Failed = KeyNotFound | UnlistedValue | TypeNotMatch | ConstraintViolation,
     };
 
     JsonStream() : q_status(Ok){};
